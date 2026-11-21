@@ -1,0 +1,126 @@
+
+/* Global Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6fb;
+  color: #222;
+}
+
+/* Main Container */
+#root {
+  min-height: 100vh;
+}
+
+#root > div {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 25px;
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  font-size: 36px;
+  color: #252b48;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 26px;
+  color: #252b48;
+  margin: 35px 0 20px;
+}
+
+h3 {
+  font-size: 20px;
+  color: #5b50b5;
+  margin-bottom: 15px;
+}
+
+/* Search Input */
+input {
+  width: 65%;
+  padding: 13px 16px;
+  border: 1px solid #d5d9e5;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  margin-right: 10px;
+}
+
+input:focus {
+  border-color: #6558d3;
+  box-shadow: 0 0 5px #6558d355;
+}
+
+/* Buttons */
+button {
+  padding: 13px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #6558d3;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #493da8;
+  transform: translateY(-2px);
+}
+
+/* Movie Cards */
+#root > div > div > div > div {
+  background: white;
+  padding: 22px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  border: 1px solid #e5e7ef;
+  box-shadow: 0 3px 12px #00000008;
+  transition: 0.2s;
+}
+
+#root > div > div > div > div:hover {
+  box-shadow: 0 6px 20px #00000012;
+  transform: translateY(-3px);
+}
+
+/* Paragraphs */
+p {
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+
+b {
+  color: #252b48;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  #root > div {
+    padding: 25px 15px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  input {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  button {
+    margin-bottom: 10px;
+  }
+}
